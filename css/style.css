@@ -1,0 +1,132 @@
+/* Обнуление */
+ 
+html {
+  box-sizing: border-box;
+ }
+ *, *::before, *::after {
+  box-sizing: inherit;
+ }
+ img {
+  display: block;
+ }
+ h1, h2, h3, h4, h5, h6, p, ul, li, a {
+  padding: 0;
+  margin: 0;
+ }
+ body {
+  margin: 0;
+  padding: 0;
+ }
+ 
+ /* Переменные с цветами */
+ 
+ :root {
+  --accent-color: #4694DC;
+  --black-color: #000000;
+  --white-color: #fff;
+  --gray-color: #D2E1FF;
+  --red-color: #D43F3F;
+  --text_p-color:#9CA3AF;
+ }
+ 
+ /* Стили для текста */
+ 
+ .text_subtitle {
+  color: var(--white-color);
+  font-family: 'MontserratMRegular';
+  font-size: 16px;  
+ }
+ .text_h1 {
+  color: var(--white-color);
+  font-family: 'MontserratSemiBold';
+  font-size: 56px;
+ }
+ .text_h2 {
+  color: var(--black-color);
+  font-family: 'MontserratSemiBold';
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 3.3px;
+ }
+ .text_p {
+  color: var(--text_p-color);
+  font-family: 'MontserratMRegular';
+  font-size: 16px; 
+  line-height: 13px;
+  letter-spacing: 0%;
+  margin: 0 auto;
+  text-align: center;
+ }
+ 
+ /* Стили для кнопки */
+ 
+ .btn {
+  border: none;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-family: 'MontserratMRegular';
+  font-size: 16px;
+  text-align: center;
+ }
+ .btn:hover {
+  color: var(--red-color);
+  background-color: #FFD7D7;
+  cursor: pointer;
+ }
+ 
+ /* Контэйнер */
+ 
+ .container {
+  max-width: 1440px;
+  padding: 0 156px;
+  margin: 0 auto;
+ } 
+
+ /* Header */
+
+.header {
+  background-color: var(--accent-color);
+  padding-top: 130px;
+}
+.header__title {  
+  text-transform: capitalize;
+  margin-bottom: 36px;
+}
+.header__subtitle {
+  max-width: 437px;
+  line-height: 24px;
+  margin-bottom: 48px;
+}
+.header__btn {
+  width: 196px;
+  height: 60px;
+  margin-bottom: 122px;
+}
+
+/* Services */
+
+.services {
+  padding-top: 100px;
+}
+.services__title {
+  margin-bottom: 24px;
+}
+.services__subtitle {
+  max-width: 465px;
+  margin-bottom: 121px;
+}
+.services__greed_ {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: end;
+}
+.services__greed_card {
+
+}
+.services__greed_icon {
+  margin: 0 auto 33px;
+}
+.services__greed_text {
+}
+
