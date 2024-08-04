@@ -40,6 +40,7 @@ html {
   color: var(--white-color);
   font-family: 'MontserratSemiBold';
   font-size: 56px;
+  text-align-last: left;
  }
  .text_h2 {
   color: var(--black-color);
@@ -48,12 +49,17 @@ html {
   text-align: center;
   letter-spacing: 3.3px;
  }
+ .text_h3 {
+  font-family: 'MontserratMedium';
+  font-size: 12px;
+  color: var(--black-color);
+  text-align-last: left;
+ }
  .text_p {
   color: var(--text_p-color);
   font-family: 'MontserratMRegular';
   font-size: 16px; 
-  line-height: 13px;
-  letter-spacing: 0%;
+  line-height: 24px;
   margin: 0 auto;
   text-align: center;
  }
@@ -112,21 +118,62 @@ html {
   margin-bottom: 24px;
 }
 .services__subtitle {
-  max-width: 465px;
+  max-width: 465px;  
+  letter-spacing: 2px;
   margin-bottom: 121px;
 }
-.services__greed_ {
+.services__grid_ {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   align-items: end;
 }
-.services__greed_card {
-
+.services__grid_card {
+margin-bottom: 200px;
 }
-.services__greed_icon {
+.services__grid_icon {
   margin: 0 auto 33px;
 }
-.services__greed_text {
+
+/* Team */
+
+.team {
 }
+.team__title {
+  margin-bottom: 24px;
+}
+.team__subtitle {
+  max-width: 465px;
+  letter-spacing: 2px;
+  margin-bottom: 80px;
+}
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+  margin-bottom: 150px;
+}
+.team__card {
+  display: flex;
+}
+.team__card_title {
+}
+.team__ava {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+.team__flex_inner {
+}
+.text_h3 {
+}
+.team__text {
+  text-align-last: left;
+  font-size: 11px;
+}
+
+
+
+
 
